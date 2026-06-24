@@ -13,12 +13,27 @@
 <body>
 
     <nav>
-    <div class="logo">📚 Lecture Notes</div>
+
+    <div class="logo">
+        📚 Lecture Notes
+    </div>
 
     <div class="menu">
+
         <a href="/">Home</a>
-        <button id="themeToggle">🌙 Dark</button>
+
+        <div class="theme-switch" id="themeToggle">
+            <div class="switch-slider"></div>
+
+            <span class="sun">☀️</span>
+
+            <div class="divider"></div>
+
+            <span class="moon">🌙</span>
+        </div>
+
     </div>
+
 </nav>
 
     <section class="hero">
@@ -100,7 +115,7 @@
 
     </section>
 
-<script src="theme.js"></script>
+<script src="{{ url_for('static', filename='theme.js') }}"></script>
 
 </body>
 
