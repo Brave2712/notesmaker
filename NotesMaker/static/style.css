@@ -241,16 +241,49 @@ button{
         0 0 15px rgba(216,107,255,.15);
 }
 
-#themeToggle{
-    border:none;
-    padding:10px 20px;
-    border-radius:30px;
-    background:#d86bff;
-    color:white;
+.theme-switch{
+    width:90px;
+    height:42px;
+    position:relative;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
     cursor:pointer;
+    overflow:hidden;
+    background:rgba(255,255,255,.05);
+}
+
+.switch-slider{
+    position:absolute;
+    left:4px;
+    top:4px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#d86bff;
+    transition:.45s cubic-bezier(.34,1.56,.64,1);
+}
+
+.divider{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:1px;
+    height:60%;
+    background:rgba(255,255,255,.2);
+}
+
+.sun,
+.moon{
+    z-index:2;
     font-size:16px;
 }
 
+.light-mode .switch-slider{
+    transform:translateX(50px);
+}
 /* LIGHT MODE */
 
 .light-mode{
