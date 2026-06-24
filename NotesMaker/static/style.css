@@ -257,12 +257,19 @@ button{
 
 .switch-slider{
     position:absolute;
-    left:4px;
-    top:4px;
+
     width:30px;
     height:30px;
+
+    left:6px;
+    top:50%;
+
+    transform:translateY(-50%) translateX(48px);
+
     border-radius:50%;
+
     background:#d86bff;
+
     transition:.45s cubic-bezier(.34,1.56,.64,1);
 }
 
@@ -282,7 +289,7 @@ button{
 }
 
 .light-mode .switch-slider{
-    transform:translateX(50px);
+    transform:translateY(-50%) translateX(0);
 }
 /* LIGHT MODE */
 
