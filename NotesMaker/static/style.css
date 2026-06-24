@@ -215,3 +215,27 @@ button{
 .download-btn{
     background:#d86bff;
 }
+
+.hero-title{
+    position:relative;
+    display:inline-block;
+}
+
+.author{
+    position:absolute;
+
+    right:15px;
+    bottom:-20px;
+
+    font-size:16px;
+    font-weight:400;
+
+    color:rgba(255,255,255,.32);
+
+    letter-spacing:2px;
+
+    font-style:italic;
+
+    text-shadow:
+        0 0 15px rgba(216,107,255,.15);
+}
