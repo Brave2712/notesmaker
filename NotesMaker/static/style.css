@@ -224,7 +224,7 @@ button{
 .author{
     position:absolute;
 
-    right:15px;
+    right:-40px;   /* move further right */
     bottom:-20px;
 
     font-size:16px;
