@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes Maker</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            📚 Notes Maker
+        </div>
+
+        <div class="menu">
+            <a href="/">Home</a>
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>
+            Welcome to
+            <span>Notes Maker</span>
+        </h1>
+
+        <p>
+            Your smart way to organize and access study materials
+        </p>
+
+    </section>
+
+    <section class="subjects">
+
+        <h2>Your Subjects</h2>
+
+        <div class="cards">
+
+            <a class="card physics" href="/folder/Physics">
+
+                <div class="icon">⚛️</div>
+
+                <h3>Physics</h3>
+
+                <p>
+                    Explore physics notes and concepts.
+                </p>
+
+                <button>
+                    View Notes
+                </button>
+
+            </a>
+
+            <a class="card chemistry" href="/folder/Chemistry">
+
+                <div class="icon">🧪</div>
+
+                <h3>Chemistry</h3>
+
+                <p>
+                    Explore chemistry notes and concepts.
+                </p>
+
+                <button>
+                    View Notes
+                </button>
+
+            </a>
+
+            <a class="card maths" href="/folder/Maths">
+
+                <div class="icon">π</div>
+
+                <h3>Maths</h3>
+
+                <p>
+                    Explore mathematics notes and concepts.
+                </p>
+
+                <button>
+                    View Notes
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

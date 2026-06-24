@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#070b17;
+    color:white;
+}
+
+nav{
+    width:95%;
+    margin:20px auto;
+    padding:20px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(255,255,255,.03);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.logo{
+    color:#d86bff;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    margin-top:100px;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+.hero span{
+    color:#d86bff;
+}
+
+.hero p{
+    margin-top:20px;
+    color:#bdbdbd;
+    font-size:22px;
+}
+
+.subjects{
+    width:90%;
+    margin:100px auto;
+}
+
+.subjects h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.cards{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:300px;
+
+    text-decoration:none;
+    color:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#111827;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.physics{
+    border:2px solid #c94dff;
+    box-shadow:0 0 25px rgba(201,77,255,.3);
+}
+
+.chemistry{
+    border:2px solid #3ea8ff;
+    box-shadow:0 0 25px rgba(62,168,255,.3);
+}
+
+.maths{
+    border:2px solid #42ff87;
+    box-shadow:0 0 25px rgba(66,255,135,.3);
+}
+
+.icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#cfcfcf;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+button{
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+
+    background:#d86bff;
+    color:white;
+
+    font-size:18px;
+    cursor:pointer;
+}
+
+.folder-header{
+    text-align:center;
+    margin-top:80px;
+}
+
+.folder-header h1{
+    font-size:60px;
+}
+
+.folder-header p{
+    color:#bdbdbd;
+    margin-top:15px;
+}
+
+.notes-container{
+    width:85%;
+    margin:60px auto;
+}
+
+.note-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.note-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(216,107,255,.2);
+}
+
+.note-card h3{
+    color:white;
+    font-size:20px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.view-btn,
+.download-btn{
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+.view-btn{
+    background:#3ea8ff;
+}
+
+.download-btn{
+    background:#d86bff;
+}
