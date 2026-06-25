@@ -105,6 +105,60 @@ def file(folder, filename):
         filename
     )
 
+@app.route("/weekly")
+def weekly():
+
+    weekly_path = os.path.join(
+        STORAGE,
+        "WeeklyTests"
+    )
+
+    weeks = []
+
+    if os.path.exists(weekly_path):
+
+        for folder in os.listdir(weekly_path):
+
+            folder_path = os.path.join(
+                weekly_path,
+                folder
+            )
+
+            if os.path.isdir(folder_path):
+                weeks.append(folder)
+
+    weeks.sort()
+
+    return render_template(
+        "weekly.html",
+        weeks=weeks
+    )
+
+@app.route("/weekly/<week>")
+def weekly_folder(week):
+
+    week_path = os.path.join(
+        STORAGE,
+        "WeeklyTests",
+        week
+    )
+
+    files = []
+
+    if os.path.exists(week_path):
+
+        for file in os.listdir(week_path):
+
+            if file.lower().endswith(".pdf"):
+                files.append(file)
+
+    files.sort()
+
+    return render_template(
+        "weekly_files.html",
+        week=week,
+        files=files
+    )
 
 if __name__ == "__main__":
     app.run(debug=True)
