@@ -411,13 +411,80 @@ color:white;
 }
 
 .weekly-card{
-    max-width:550px;
+
+    display:block;
+
+    width:550px;
+    max-width:100%;
+
     margin:0 auto;
 
+    padding:40px;
+
+    background:#111827;
+
     border:2px solid #ffb347;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    color:white;
+
+    text-align:center;
+
     box-shadow:0 0 25px rgba(255,179,71,.3);
+
+    transition:.3s;
+
+}
+
+.weekly-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.weekly-card .icon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.weekly-card h3{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.weekly-card p{
+
+    color:#cfcfcf;
+
+    margin-bottom:30px;
+
+    line-height:1.6;
+
 }
 
 .light-mode .section-divider{
     background:rgba(0,0,0,.12);
+}
+
+.light-mode .weekly-card{
+
+    background:white;
+
+    color:#111;
+
+}
+
+.light-mode .weekly-card p{
+
+    color:#111;
+
 }
