@@ -131,8 +131,10 @@ def weekly():
             if os.path.isdir(folder_path):
                 weeks.append(folder)
 
-    weeks.sort()
-
+        weeks.sort(
+            key=lambda x: int(x.replace("Week ", ""))
+        )
+    
     return render_template(
         "weekly.html",
         weeks=weeks
@@ -156,7 +158,17 @@ def weekly_folder(week):
             if file.lower().endswith(".pdf"):
                 files.append(file)
 
-    files.sort()
+    custom_order = [
+        "Physics Test.pdf",
+        "Chemistry Test.pdf",
+        "Mathematics Test.pdf"
+    ]
+
+    files.sort(
+        key=lambda x: custom_order.index(x)
+        if x in custom_order
+        else 999
+    )
 
     return render_template(
         "weekly_files.html",
