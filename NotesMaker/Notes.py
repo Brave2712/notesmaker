@@ -97,14 +97,18 @@ def folder(folder_name):
         files=files
     )
 
-@app.route("/file/<folder>/<filename>")
-def file(folder, filename):
+@app.route("/file/<path:filepath>")
+def file(filepath):
+
+    folder = os.path.dirname(filepath)
+
+    filename = os.path.basename(filepath)
 
     return send_from_directory(
         os.path.join(STORAGE, folder),
         filename
     )
-
+    
 @app.route("/weekly")
 def weekly():
 
