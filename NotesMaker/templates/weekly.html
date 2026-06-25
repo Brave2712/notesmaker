@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weekly Tests</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <nav>
+
+    <div class="logo">
+        📚 Lecture Notes
+    </div>
+
+    <div class="menu">
+        <a href="/">Home</a>
+
+        <div class="theme-switch" id="themeToggle">
+            <div class="switch-slider"></div>
+
+            <span class="sun">☀️</span>
+
+            <div class="divider"></div>
+
+            <span class="moon">🌙</span>
+        </div>
+    </div>
+
+</nav>
+
+    <section class="folder-header">
+
+        <h1>Weekly Tests</h1>
+
+        <h2>Total Weeks: {{ weeks|length }}</h2>
+      
+        <p>
+            Select a week to view the tests.
+        </p>
+
+    </section>
+
+    <section class="notes-container">
+
+        {% if weeks %}
+
+    {% for week in weeks %}
+
+    <div class="note-card">
+
+        <div>
+
+            <h3>{{ week }}</h3>
+
+        </div>
+
+        <div class="buttons">
+
+            <a
+                class="view-btn"
+                href="/weekly/{{ week }}">
+
+                Open
+
+            </a>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+{% else %}
+
+    <h2>No Weeks Found</h2>
+
+{% endif %}
+      
+    </section>
+
+<script src="{{ url_for('static', filename='theme.js') }}"></script>
+
+</body>
+
+</html>
