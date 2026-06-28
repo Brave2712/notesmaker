@@ -81,7 +81,8 @@ def folder(folder_name):
             "lecture 7 friction 1.pdf",
             "lecture 8 friction 2.pdf",
             "lecture 9 friction and calculus 3 (online class).pdf",
-            "lecture 10 calculus 4.pdf"
+            "lecture 10 calculus 4.pdf",
+            "lecture 11 calculus 5.pdf"
         ]
     }
 
