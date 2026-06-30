@@ -58,7 +58,7 @@ def folder(folder_name):
             "chem11.pdf",
             "QuantumMechanicalModelLecture12.pdf",
             "ElectronicConfigurationLecture13.pdf"
-        ],
+        ]
 
         "Maths": [
             "mathlecture1and2.pdf",
@@ -68,8 +68,10 @@ def folder(folder_name):
             "mathlecture6.pdf",
             "mathlecture7.pdf",
             "mathlecture8.pdf",
-            "mathlecture9.pdf"
-        ],
+            "mathlecture9.pdf",
+            "QuadraticEquationsLecture10.pdf",
+            "InequalityLecture11.pdf"
+        ]
 
         "Physics": [
             "lecture 1.pdf",
