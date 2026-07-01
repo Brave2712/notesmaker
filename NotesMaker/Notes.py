@@ -57,7 +57,8 @@ def folder(folder_name):
             "chem10.pdf",
             "chem11.pdf",
             "QuantumMechanicalModelLecture12.pdf",
-            "ElectronicConfigurationLecture13.pdf"
+            "ElectronicConfigurationLecture13.pdf",
+            "PeriodicPropertiesLecture14.pdf"
         ]
 
         "Maths": [
