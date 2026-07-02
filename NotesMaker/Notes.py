@@ -71,7 +71,8 @@ def folder(folder_name):
             "mathlecture8.pdf",
             "mathlecture9.pdf",
             "QuadraticEquationsLecture10.pdf",
-            "InequalityLecture11.pdf"
+            "InequalityLecture11.pdf",
+            "CommonRootsLecture12.pdf"
         ]
 
         "Physics": [
